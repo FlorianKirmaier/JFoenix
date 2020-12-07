@@ -1,4 +1,5 @@
 apply plugin: 'osgi'
+apply plugin: 'maven-publish'
 apply plugin: 'com.jfrog.bintray'
 apply plugin: 'java-library'
 
@@ -12,6 +13,17 @@ ext {
 }
 configurations {
     pom
+}
+
+publishing {
+    publications {
+        mavenJava(MavenPublication) {
+            from components.java
+            groupId "de.sandec"
+            artifactId project.name
+            version = "0.1"
+        }
+    }
 }
 
 task sourcesJar(type: Jar) {

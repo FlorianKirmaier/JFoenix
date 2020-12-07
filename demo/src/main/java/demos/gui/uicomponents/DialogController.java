@@ -17,60 +17,61 @@ import javafx.stage.Stage;
 import javax.annotation.PostConstruct;
 
 @ViewController(value = "/fxml/ui/Dialog.fxml", title = "Material Design Example")
-public class DialogController {
+public class DialogController implements javafx.fxml.Initializable {
 
     public static final String CONTENT_PANE = "ContentPane";
-    @FXMLViewFlowContext
-    private ViewFlowContext context;
+
+    public StackPane context;
     @FXML
-    private JFXButton centerButton;
+    public JFXButton centerButton;
     @FXML
-    private JFXButton topButton;
+    public JFXButton topButton;
     @FXML
-    private JFXButton rightButton;
+    public JFXButton rightButton;
     @FXML
-    private JFXButton bottomButton;
+    public JFXButton bottomButton;
     @FXML
-    private JFXButton leftButton;
+    public JFXButton leftButton;
     @FXML
-    private JFXButton acceptButton;
+    public JFXButton acceptButton;
     @FXML
-    private JFXButton alertButton;
+    public JFXButton alertButton;
     @FXML
-    private StackPane root;
+    public StackPane root;
     @FXML
-    private JFXDialog dialog;
+    public JFXDialog dialog;
 
     /**
      * init fxml when loaded.
      */
-    @PostConstruct
-    public void init() {
+    @Override
+    public void initialize(java.net.URL url, java.util.ResourceBundle rb) {
+        context = root;
         root.getChildren().remove(dialog);
 
         centerButton.setOnAction(action -> {
             dialog.setTransitionType(DialogTransition.CENTER);
-            dialog.show((StackPane) context.getRegisteredObject(CONTENT_PANE));
+            dialog.show(context);
         });
 
         topButton.setOnAction(action -> {
             dialog.setTransitionType(DialogTransition.TOP);
-            dialog.show((StackPane) context.getRegisteredObject(CONTENT_PANE));
+            dialog.show(context);
         });
 
         rightButton.setOnAction(action -> {
             dialog.setTransitionType(DialogTransition.RIGHT);
-            dialog.show((StackPane) context.getRegisteredObject(CONTENT_PANE));
+            dialog.show(context);
         });
 
         bottomButton.setOnAction(action -> {
             dialog.setTransitionType(DialogTransition.BOTTOM);
-            dialog.show((StackPane) context.getRegisteredObject(CONTENT_PANE));
+            dialog.show(context);
         });
 
         leftButton.setOnAction(action -> {
             dialog.setTransitionType(DialogTransition.LEFT);
-            dialog.show((StackPane) context.getRegisteredObject(CONTENT_PANE));
+            dialog.show(context);
         });
 
         acceptButton.setOnAction(action -> dialog.close());

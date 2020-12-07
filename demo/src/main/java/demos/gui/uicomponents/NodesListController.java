@@ -12,16 +12,16 @@ import javax.annotation.PostConstruct;
 public class NodesListController {
 
     @FXML
-    JFXNodesList nodesList;
+    public JFXNodesList nodesList;
 
     @FXML
-    JFXButton newButton;
+    public JFXButton newButton;
     @FXML
-    JFXButton fileButton;
+    public JFXButton fileButton;
     @FXML
-    JFXButton commentButton;
+    public JFXButton commentButton;
     @FXML
-    JFXButton filterButton;
+    public JFXButton filterButton;
 
     @FXML
     public void onNewFile() {

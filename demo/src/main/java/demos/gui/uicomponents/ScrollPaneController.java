@@ -12,20 +12,20 @@ import javafx.scene.paint.Color;
 import javax.annotation.PostConstruct;
 
 @ViewController(value = "/fxml/ui/ScrollPane.fxml", title = "Material Design Example")
-public class ScrollPaneController {
+public class ScrollPaneController implements javafx.fxml.Initializable {
 
     @FXML
-    private JFXListView<String> contentList;
+    public JFXListView<String> contentList;
     @FXML
-    private JFXButton backButton;
+    public JFXButton backButton;
     @FXML
-    private JFXScrollPane scroll;
+    public JFXScrollPane scroll;
 
     /**
      * init fxml when loaded.
      */
-    @PostConstruct
-    public void init() {
+    @Override
+    public void initialize(java.net.URL url, java.util.ResourceBundle rb) {
 
         for (int i = 0; i < 100; i++) {
             contentList.getItems().add("Item " + i);

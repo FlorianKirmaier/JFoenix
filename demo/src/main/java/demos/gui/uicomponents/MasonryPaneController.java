@@ -28,21 +28,22 @@ import java.util.ArrayList;
 
 import static javafx.animation.Interpolator.EASE_BOTH;
 
-@ViewController(value = "/fxml/ui/Masonry.fxml", title = "Material Design Example")
-public class MasonryPaneController {
+//@ViewController(value = "/fxml/ui/Masonry.fxml", title = "Material Design Example")
+public class MasonryPaneController implements javafx.fxml.Initializable {
 
     @FXML
-    private ScrollPane scrollPane;
+    public ScrollPane scrollPane;
     @FXML
-    private JFXMasonryPane masonryPane;
+    public JFXMasonryPane masonryPane;
 
     /**
      * init fxml when loaded.
      */
-    @PostConstruct
-    public void init() {
+    @Override
+    public void initialize(java.net.URL url, java.util.ResourceBundle rb) {
         ArrayList<Node> children = new ArrayList<>();
-        for (int i = 0; i < 20; i++) {
+
+        for (int i = 0; i < 10; i++) {
             StackPane child = new StackPane();
             double width = Math.random() * 100 + 100;
             child.setPrefWidth(width);

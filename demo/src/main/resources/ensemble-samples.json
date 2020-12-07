@@ -1,0 +1,178 @@
+{
+    "samples": [
+        {
+            "project": "JFoenix",
+            "name": "Button",
+            "desc": "JFoenix Button",
+            "preview": "preview/button.png",
+            "fxml": "fxml/ui/Button.fxml",
+            "css": ["com/jfoenix/assets/css/jfoenix-fonts.css","com/jfoenix/assets/css/jfoenix-design.css","css/jfoenix-main-demo.css"]
+        },
+        {
+            "project": "JFoenix",
+            "name": "Checkbox",
+            "desc": "JFoenix Checkbox",
+            "preview": "preview/CheckBox.png",
+            "fxml": "fxml/ui/Checkbox.fxml",
+            "css": ["com/jfoenix/assets/css/jfoenix-fonts.css","com/jfoenix/assets/css/jfoenix-design.css","css/jfoenix-main-demo.css"]
+        },
+        {
+            "project": "JFoenix",
+            "name": "ChipView",
+            "desc": "JFoenix ChipView",
+            "preview": "preview/button.png",
+            "fxml": "fxml/ui/ChipView.fxml",
+            "controller": "demos.gui.uicomponents.ChipViewController",
+            "css": ["com/jfoenix/assets/css/jfoenix-fonts.css","com/jfoenix/assets/css/jfoenix-design.css","css/jfoenix-main-demo.css"],
+            "disabled": true
+        },
+        {
+            "project": "JFoenix",
+            "name": "Dialog",
+            "desc": "JFoenix Dialog",
+            "preview": "preview/Dialog.png",
+            "fxml": "fxml/ui/Dialog.fxml",
+            "controller": "demos.gui.uicomponents.DialogController",
+            "css": ["com/jfoenix/assets/css/jfoenix-fonts.css","com/jfoenix/assets/css/jfoenix-design.css","css/jfoenix-main-demo.css"]
+        },
+        {
+            "project": "JFoenix",
+            "name": "Highlighter",
+            "desc": "JFoenix Highlighter",
+            "preview": "preview/button.png",
+            "fxml": "fxml/ui/Highlighter.fxml",
+            "css": ["com/jfoenix/assets/css/jfoenix-fonts.css","com/jfoenix/assets/css/jfoenix-design.css","css/jfoenix-main-demo.css"],
+            "disabled": true
+        },
+        {
+            "project": "JFoenix",
+            "name": "Icons",
+            "desc": "JFoenix Icons",
+            "preview": "preview/Icons.png",
+            "fxml": "fxml/ui/Icons.fxml",
+            "controller": "demos.gui.uicomponents.IconsController",
+            "css": ["com/jfoenix/assets/css/jfoenix-fonts.css","com/jfoenix/assets/css/jfoenix-design.css","css/jfoenix-main-demo.css"]
+        },
+        {
+            "project": "JFoenix",
+            "name": "ListView",
+            "desc": "JFoenix ListView",
+            "preview": "preview/ListView.png",
+            "fxml": "fxml/ui/ListView.fxml",
+            "css": ["com/jfoenix/assets/css/jfoenix-fonts.css","com/jfoenix/assets/css/jfoenix-design.css","css/jfoenix-main-demo.css"]
+        },
+        {
+            "project": "JFoenix",
+            "name": "Masonry",
+            "desc": "JFoenix Masonry",
+            "preview": "preview/Masonry.png",
+            "fxml": "fxml/ui/Masonry.fxml",
+            "controller": "demos.gui.uicomponents.MasonryPaneController",
+            "css": ["com/jfoenix/assets/css/jfoenix-fonts.css","com/jfoenix/assets/css/jfoenix-design.css","css/jfoenix-main-demo.css"]
+        },
+        {
+            "project": "JFoenix",
+            "name": "NodesList",
+            "desc": "JFoenix NodesList",
+            "preview": "preview/button.png",
+            "fxml": "fxml/ui/NodesList.fxml",
+            "controller": "demos.gui.uicomponents.NodesListController",
+            "css": ["com/jfoenix/assets/css/jfoenix-fonts.css","com/jfoenix/assets/css/jfoenix-design.css","css/jfoenix-main-demo.css"],
+            "disabled": true,
+            "comment": "not really used"
+        },
+        {
+            "project": "JFoenix",
+            "name": "Pickers",
+            "desc": "JFoenix Pickers",
+            "preview": "preview/button.png",
+            "fxml": "fxml/ui/Pickers.fxml",
+            "css": ["com/jfoenix/assets/css/jfoenix-fonts.css","com/jfoenix/assets/css/jfoenix-design.css","css/jfoenix-main-demo.css"],
+            "disabled": true
+        },
+        {
+            "project": "JFoenix",
+            "name": "Popup",
+            "desc": "JFoenix Popup",
+            "preview": "preview/button.png",
+            "fxml": "fxml/ui/Popup.fxml",
+            "css": ["com/jfoenix/assets/css/jfoenix-fonts.css","com/jfoenix/assets/css/jfoenix-design.css","css/jfoenix-main-demo.css"],
+            "disabled": true
+        },
+        {
+            "project": "JFoenix",
+            "name": "ProgressBar",
+            "desc": "JFoenix ProgressBar",
+            "preview": "preview/ProgressBar.png",
+            "css": ["com/jfoenix/assets/css/jfoenix-fonts.css","com/jfoenix/assets/css/jfoenix-design.css","css/jfoenix-main-demo.css"],
+            "fxml": "fxml/ui/ProgressBar.fxml"
+        },
+        {
+            "project": "JFoenix",
+            "name": "RadioButton",
+            "desc": "JFoenix RadioButton",
+            "preview": "preview/RadioButton.png",
+            "css": ["com/jfoenix/assets/css/jfoenix-fonts.css","com/jfoenix/assets/css/jfoenix-design.css","css/jfoenix-main-demo.css"],
+            "fxml": "fxml/ui/RadioButton.fxml"
+        },
+        {
+            "project": "JFoenix",
+            "name": "ScrollPane",
+            "desc": "JFoenix ScrollPane",
+            "preview": "preview/ScrollPane.png",
+            "fxml": "fxml/ui/ScrollPane.fxml",
+            "controller": "demos.gui.uicomponents.ScrollPaneController",
+            "css": ["com/jfoenix/assets/css/jfoenix-fonts.css","com/jfoenix/assets/css/jfoenix-design.css","css/jfoenix-main-demo.css"]
+        },
+        {
+            "project": "JFoenix",
+            "name": "Slider",
+            "desc": "JFoenix Slider",
+            "preview": "preview/Slider.png",
+            "fxml": "fxml/ui/Slider.fxml",
+            "css": ["com/jfoenix/assets/css/jfoenix-fonts.css","com/jfoenix/assets/css/jfoenix-design.css","css/jfoenix-main-demo.css"]
+        },
+        {
+            "project": "JFoenix",
+            "name": "Spinner",
+            "desc": "JFoenix Spinner",
+            "preview": "preview/Spinner.png",
+            "fxml": "fxml/ui/Spinner.fxml",
+            "css": ["com/jfoenix/assets/css/jfoenix-fonts.css","com/jfoenix/assets/css/jfoenix-design.css","css/jfoenix-main-demo.css"]
+        },
+        {
+            "project": "JFoenix",
+            "name": "SVGLoader",
+            "desc": "JFoenix SVGLoader",
+            "preview": "preview/button.png",
+            "fxml": "fxml/ui/SVGLoader.fxml",
+            "css": ["com/jfoenix/assets/css/jfoenix-fonts.css","com/jfoenix/assets/css/jfoenix-design.css","css/jfoenix-main-demo.css"],
+            "disabled": true
+        },
+        {
+            "project": "JFoenix",
+            "name": "TextField",
+            "desc": "JFoenix TextField",
+            "preview": "preview/TextField.png",
+            "fxml": "fxml/ui/TextField.fxml",
+            "css": ["com/jfoenix/assets/css/jfoenix-fonts.css","com/jfoenix/assets/css/jfoenix-design.css","css/jfoenix-main-demo.css"]
+        },
+        {
+            "project": "JFoenix",
+            "name": "ToggleButton",
+            "desc": "JFoenix ToggleButton",
+            "preview": "preview/ToggleButton.png",
+            "fxml": "fxml/ui/ToggleButton.fxml",
+            "css": ["com/jfoenix/assets/css/jfoenix-fonts.css","com/jfoenix/assets/css/jfoenix-design.css","css/jfoenix-main-demo.css"]
+        },
+        {
+            "project": "JFoenix",
+            "name": "TreeTableView",
+            "desc": "JFoenix TreeTableView",
+            "preview": "preview/TreeTableView.png",
+            "fxml": "fxml/ui/TreeTableView.fxml",
+            "controller": "demos.gui.uicomponents.TreeTableViewController",
+            "css": ["com/jfoenix/assets/css/jfoenix-fonts.css","com/jfoenix/assets/css/jfoenix-design.css","css/jfoenix-main-demo.css"]
+        }
+    ]
+}

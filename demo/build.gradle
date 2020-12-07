@@ -1,5 +1,23 @@
 apply plugin: 'application'
 apply plugin: 'java-library'
+apply plugin: 'maven-publish'
+
+jar {
+    from fileTree('src/main/java')
+}
+
+
+publishing {
+    publications {
+        maven(MavenPublication) {
+            groupId = "de.sandec"
+            artifactId = "jfoenix-demo"
+            version = "0.1"
+
+            from components.java
+        }
+    }
+}
 
 applicationDefaultJvmArgs = ["-Dprism.order=d3d,es2,es1,sw "]
 mainClassName = 'demos.MainDemo'
@@ -16,5 +34,8 @@ dependencies {
     // Versions higher than 2.x are for Java 11
     compile 'org.kordamp.ikonli:ikonli-javafx:2.4.0'
     compile 'org.kordamp.ikonli:ikonli-fontawesome5-pack:2.4.0'
+
+    compile 'de.jensd:fontawesomefx-controls:9.1.2'
+    compile 'de.jensd:fontawesomefx-fontawesome:4.7.0-5'
     compile project(':jfoenix')
 }

@@ -16,31 +16,31 @@ import javafx.util.Duration;
 import javax.annotation.PostConstruct;
 
 @ViewController(value = "/fxml/ui/Icons.fxml", title = "Material Design Example")
-public class IconsController {
+public class IconsController implements javafx.fxml.Initializable {
 
     @FXML
-    private JFXHamburger burger1;
+    public JFXHamburger burger1;
     @FXML
-    private JFXHamburger burger2;
+    public JFXHamburger burger2;
     @FXML
-    private JFXHamburger burger3;
+    public JFXHamburger burger3;
     @FXML
-    private JFXHamburger burger4;
+    public JFXHamburger burger4;
 
     @FXML
-    private JFXBadge badge1;
+    public JFXBadge badge1;
 
     @FXML
-    private StackPane root;
-    private JFXSnackbar snackbar;
-    private int count = 1;
+    public StackPane root;
+    public JFXSnackbar snackbar;
+    public int count = 1;
 
 
     /**
      * init fxml when loaded.
      */
-    @PostConstruct
-    public void init() {
+    @Override
+    public void initialize(java.net.URL url, java.util.ResourceBundle rb) {
 
         bindAction(burger1);
         bindAction(burger2);

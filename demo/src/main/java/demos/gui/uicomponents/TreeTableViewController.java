@@ -26,42 +26,42 @@ import java.util.Random;
 import java.util.function.Function;
 
 @ViewController(value = "/fxml/ui/TreeTableView.fxml", title = "Material Design Example")
-public class TreeTableViewController {
+public class TreeTableViewController implements javafx.fxml.Initializable {
 
     private static final String PREFIX = "( ";
     private static final String POSTFIX = " )";
 
     // readonly table view
     @FXML
-    private JFXTreeTableView<Person> treeTableView;
+    public JFXTreeTableView<Person> treeTableView;
     @FXML
-    private JFXTreeTableColumn<Person, String> firstNameColumn;
+    public JFXTreeTableColumn<Person, String> firstNameColumn;
     @FXML
-    private JFXTreeTableColumn<Person, String> lastNameColumn;
+    public JFXTreeTableColumn<Person, String> lastNameColumn;
     @FXML
-    private JFXTreeTableColumn<Person, Integer> ageColumn;
+    public JFXTreeTableColumn<Person, Integer> ageColumn;
     @FXML
-    private JFXTextField searchField;
+    public JFXTextField searchField;
 
     // editable table view
     @FXML
-    private JFXTreeTableView<Person> editableTreeTableView;
+    public JFXTreeTableView<Person> editableTreeTableView;
     @FXML
-    private JFXTreeTableColumn<Person, String> firstNameEditableColumn;
+    public JFXTreeTableColumn<Person, String> firstNameEditableColumn;
     @FXML
-    private JFXTreeTableColumn<Person, String> lastNameEditableColumn;
+    public JFXTreeTableColumn<Person, String> lastNameEditableColumn;
     @FXML
-    private JFXTreeTableColumn<Person, Integer> ageEditableColumn;
+    public JFXTreeTableColumn<Person, Integer> ageEditableColumn;
     @FXML
-    private Label treeTableViewCount;
+    public Label treeTableViewCount;
     @FXML
-    private JFXButton treeTableViewAdd;
+    public JFXButton treeTableViewAdd;
     @FXML
-    private JFXButton treeTableViewRemove;
+    public JFXButton treeTableViewRemove;
     @FXML
-    private Label editableTreeTableViewCount;
+    public Label editableTreeTableViewCount;
     @FXML
-    private JFXTextField searchField2;
+    public JFXTextField searchField2;
 
     private final String[] names = {"Morley", "Scott", "Kruger", "Lain",
         "Kennedy", "Gawron", "Han", "Hall", "Aydogdu", "Grace",
@@ -72,8 +72,8 @@ public class TreeTableViewController {
     /**
      * init fxml when loaded.
      */
-    @PostConstruct
-    public void init() {
+    @Override
+    public void initialize(java.net.URL url, java.util.ResourceBundle rb) {
         setupReadOnlyTableView();
         setupEditableTableView();
     }
